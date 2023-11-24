@@ -83,7 +83,7 @@ export default function Login() {
               </SPassword>
             </PasswordForm>
             <SubmitForm type="submit">Submit</SubmitForm>
-            <Link href={'/register'}>Didnt cry yet? Sign Up</Link>
+            <Link href={'/register'}>Didnt cry yet? <u>Sign Up</u></Link>
           </LoginForm>
         </Drop>
       </Right>

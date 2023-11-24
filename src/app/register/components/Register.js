@@ -99,7 +99,7 @@ export default function Register() {
             </PasswordForm>
             <SubmitForm type="submit">Submit</SubmitForm>
 
-            <Link href={"/"}>Already cried? Sign In</Link>
+            <Link href={"/"}>Already cried? <u>Sign In</u></Link>
           </LoginForm>
         </Drop>
       </Right>

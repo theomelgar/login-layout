@@ -108,6 +108,8 @@ export const LoginForm = styled.form`
   input {
     font-size: 20px;
     padding: 1rem;
+    color: #ffffff;
+      background: #000000;
   }
   label {
     font-size: 32px;
@@ -123,14 +125,10 @@ export const LoginForm = styled.form`
     color: #000000;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
     padding: 1rem;
-    input {
-      color: #ffffff;
-      background: #000000;
-    }
     a{
-      background: #ffffff;
       padding: 0.3rem;
       border-radius: 10px;
+      background: #ffffff;
     }
   }
 `;
@@ -163,9 +161,8 @@ export const ShowPassword = styled.span`
   right: 0.6rem;
   width: 1.5rem;
   height: 1.2rem;
-  @media(max-width:640px){
-    color: #ffffff;
-  }
+  color: #ffffff;
+
 `;
 
 export const SubmitForm = styled.button`

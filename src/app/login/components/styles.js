@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   height: 100svh;
-  font-family: 'Amatic SC', sans-serif;
+  font-family: "Amatic SC", sans-serif;
 
   background: url(./pexels-joão-cabral-3299386.jpg) no-repeat center center
     fixed;
@@ -31,7 +31,7 @@ export const Left = styled.div`
   color: #000000;
   background-color: #ffffff;
   backdrop-filter: blur(10px);
-  
+
   h1 {
     font-size: 60px;
   }
@@ -82,10 +82,10 @@ export const Drop = styled.div`
   height: 30rem;
   border-radius: 0% 100% 100% 100%;
   -webkit-transform: rotate(45deg);
-  
+
   @media (max-width: 500px) {
-    background:none;
-    box-shadow:none;
+    background: none;
+    box-shadow: none;
     -webkit-transform: rotate(0deg);
   }
 `;
@@ -101,13 +101,13 @@ export const LoginForm = styled.form`
   font-size: 50px;
   font-weight: 700;
   color: #000000;
-  h1{
+  h1 {
     margin: 0 auto;
   }
   label {
     font-size: 32px;
   }
-  a{
+  a {
     font-size: 30px;
   }
   @media (max-width: 500px) {
@@ -118,10 +118,6 @@ export const LoginForm = styled.form`
     color: #ffffff;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
     padding: 1rem;
-    input{
-      color: #ffffff;
-      background: #000000;
-    }
   }
 `;
 
@@ -129,7 +125,7 @@ export const EmailForm = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;  
+  justify-content: center;
   input {
     font-size: 20px;
     padding: 1rem;
@@ -149,7 +145,7 @@ export const PasswordForm = styled.div`
 
 export const SPassword = styled.div`
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   position: relative;
 `;
@@ -162,6 +158,7 @@ export const ShowPassword = styled.span`
   right: 0.6rem;
   width: 1.5rem;
   height: 1.2rem;
+  color: #ffffff;
 `;
 
 export const SubmitForm = styled.button`
@@ -169,7 +166,7 @@ export const SubmitForm = styled.button`
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'Amatic SC', sans-serif;
+  font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-size: 30px;
-`
+`;
