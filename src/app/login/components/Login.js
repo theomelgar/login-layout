@@ -1,9 +1,18 @@
 "use client";
 import React, { useState } from "react";
-import { Container, Drop, EmailForm, Left, LoginForm, PasswordForm, Right, SPassword, ShowPassword } from "./styles";
+import { Container, Drop, EmailForm, Left, LoginForm, PasswordForm, Right, SPassword, ShowPassword, SubmitForm } from "./styles";
+import Link from "next/link";
 
 export default function Login() {
   const [passwordType, setPasswordType] = useState("password");
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+    alert("Logged in!");
+    // Add your login logic here
+
+ };
 
   const handlePasswordVisibility = () => {
     setPasswordType(passwordType === "password" ? "text" : "password");
@@ -18,13 +27,14 @@ export default function Login() {
       </Left>
       <Right>
         <Drop>
-          <LoginForm>
+          <LoginForm onSubmit={handleSubmit}>
             <h1>Sign In</h1>
             <EmailForm>
               <label htmlFor="email">Email:</label>
               <input
                 id="email"
                 type="text"
+                required
                 placeholder="Email address"
                 autoComplete="email"
               />
@@ -35,6 +45,7 @@ export default function Login() {
                 <input
                   id="password"
                   type={passwordType}
+                  required
                   placeholder="Password"
                   autoComplete="current-password"
                 />
@@ -71,6 +82,8 @@ export default function Login() {
                 </ShowPassword>
               </SPassword>
             </PasswordForm>
+            <SubmitForm type="submit">Submit</SubmitForm>
+            <Link href={'/register'}>Didnt cry yet? Sign Up</Link>
           </LoginForm>
         </Drop>
       </Right>
