@@ -30,9 +30,8 @@ export const Left = styled.div`
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-  backdrop-filter: blur(10px);
+  color: #ffffff;
+  background-color: #000000;
 
   h1 {
     font-size: 60px;
@@ -46,13 +45,13 @@ export const Left = styled.div`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 30px;
+      font-size: 35px;
     }
     h2 {
-      font-size: 25px;
+      font-size: 30px;
     }
     h3 {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
   @media (max-width: 1000px) {
@@ -68,7 +67,7 @@ export const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     width: 100%;
   }
 `;
@@ -80,8 +79,8 @@ export const Drop = styled.div`
   background-color: rgba(255, 255, 255, 0.44);
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
   margin: 0 auto;
-  width: 40rem;
-  height: 40rem;
+  width: 35rem;
+  height: 35rem;
   border-radius: 100% 100% 0% 100%;
   -webkit-transform: rotate(45deg);
 
@@ -107,8 +106,6 @@ export const LoginForm = styled.form`
     margin: 0 auto;
   }
   input {
-    background: none;
-    color: #000000;
     font-size: 20px;
     padding: 1rem;
   }
@@ -121,6 +118,7 @@ export const LoginForm = styled.form`
   @media (max-width: 640px) {
     /* height: 30rem;
     width: 30rem; */
+    backdrop-filter: blur(5px);
     -webkit-transform: rotate(0deg);
     color: #000000;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
@@ -128,6 +126,11 @@ export const LoginForm = styled.form`
     input {
       color: #ffffff;
       background: #000000;
+    }
+    a{
+      background: #ffffff;
+      padding: 0.3rem;
+      border-radius: 10px;
     }
   }
 `;
@@ -155,12 +158,14 @@ export const SPassword = styled.div`
 
 export const ShowPassword = styled.span`
   cursor: pointer;
-  background: none;
   position: absolute;
   top: -1.2rem;
   right: 0.6rem;
   width: 1.5rem;
   height: 1.2rem;
+  @media(max-width:640px){
+    color: #ffffff;
+  }
 `;
 
 export const SubmitForm = styled.button`
